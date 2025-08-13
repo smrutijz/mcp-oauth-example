@@ -2,3 +2,10 @@ fastmcp
 python-jose[cryptography]
 httpx
 python-dotenv
+openai
+langchain
+langchain_openai
+langchain_community
+langchain_core
+langchain_mcp_adapters
+langgraph

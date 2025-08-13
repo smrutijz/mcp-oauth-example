@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-OAUTH_DOMAIN = os.getenv("OAUTH_DOMAIN")
+OAUTH_DOMAIN_NAME = os.getenv("OAUTH_DOMAIN_NAME")
 OAUTH_AUDIENCE = os.getenv("OAUTH_AUDIENCE")
 CLIENT_ID = os.getenv("CLIENT_ID")
 CLIENT_SECRET = os.getenv("CLIENT_SECRET")
@@ -18,7 +18,7 @@ MCP_URL = "http://127.0.0.1:8000/mcp"
 
 
 # Define connection and endpoint
-conn = http.client.HTTPSConnection("smruti-ai-solution.us.auth0.com")
+conn = http.client.HTTPSConnection(OAUTH_DOMAIN_NAME)
 
 # Prepare form-encoded data
 params = urllib.parse.urlencode({
